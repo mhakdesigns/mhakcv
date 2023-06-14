@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import pg from "../assets/projects/pg.png";
-import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
+import BlogApp from "../assets/projects/blogApp.png";
+import imageEdit from "../assets/projects/imageEdit.png";
+import Resort from "../assets/projects/resort.png";
+import Ecomerce from "../assets/projects/ecomerce.png";
+import Recomerce from "../assets/projects/rsecomerce.png"
 
 const Projects = () => {
   return (
@@ -20,67 +20,53 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
+              imgPath={Ecomerce}
               isBlog={false}
-              title="E‑Commerce Website"
-              description="Features include standard e-commerce functionalities like
-              product browsing, cart management, secure checkout,
-              and an admin page for user and product management.This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB as the database."
-              ghLink="https://github.com/hishamak18/mhakreact"
+              title="E‑Commerce Website(MERN)"
+              description="This ecommerce website employs a Node.js and Express.js REST API for CRUD operations on user profiles, products, and admin panel. It has an efficient UI for product management, a complete purchase process, and integrates Stripe API for payments. MongoDB and Firebase serve as the database."
+              ghLink="https://github.com/hishamak18/mhak-react"
+              demoLink="https://mhak.live"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lift}
+              imgPath={Resort}
               isBlog={false}
-              title="Lift-Buddy"
-              description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
+              title="Resort Booking Website(MERN)"
+              description="This MERN stack resort reservation website enables users to reserve rooms, check availability, and offers an admin page for streamlined reservations and price updates. The website leverages MongoDB for the database, Express.js for the backend, React.js for the frontend, and Node.js as the runtime environment."
+              ghLink="https://github.com/hishamak18"
+              demoLink="https://mountainvibes.co.in"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BlogApp}
+              isBlog={false}
+              title="Blog App (MERN)"
+              description="The MERN stack blog app is a web application that allows users to create, read, update, and delete blog posts. It uses MongoDB as the database, Express.js for the backend, React.js for the frontend, and Node.js as the runtime environment. Users can write and publish blog posts with ease."
               ghLink="https://github.com/hishamak18"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={project}
+              imgPath={imageEdit}
               isBlog={false}
-              title="Social Media"
-              description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-              ghLink="https://github.com/hishamak18"
+              title="Responsive Image Editor(JavaScript)"
+              description="This responsive image editor is implemented using JavaScript. Users can upload images, edit them using various editing tools, and save the edited image. The editor is designed to be responsive, ensuring a seamless user experience across different devices and screen sizes."
+              ghLink="https://github.com/hishamak18/Image-Editor-With_JS"
+              demoLink="https://hishamak18.github.io/Image-Editor-With_JS/"
             />
           </Col>
-
-       
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={pg}
+              imgPath={Recomerce}
               isBlog={false}
-              title="Blog Website"
-              description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
-              ghLink="https://github.com/hishamak18"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={krypto}
-              isBlog={false}
-              title="Project Krypto"
-              description="Project Krypto is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It allows users to interact with their Metamask wallet and send Ethereum."
-              ghLink="https://github.com/hishamak18"
-              demoLink="https://akhisham.online"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={kickstart}
-              isBlog={false}
-              title="Solidity Kickstart"
-              description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-              ghLink="https://github.com/hishamak18"
+              title="Responsive E-commerce website (Frontend)"
+              description="This responsive e-commerce website's frontend is developed using HTML, CSS, and JavaScript. It features a user-friendly interface that adapts to different screen sizes and devices. The website includes essential e-commerce functionalities such as product listings, search, cart management, and a checkout process."
+              ghLink="https://github.com/hishamak18/ResponsiveEcomerseDesign"
+              demoLink="https://hishamak18.github.io/ResponsiveEcomerseDesign/"
             />
           </Col>
         </Row>

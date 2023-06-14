@@ -37,7 +37,7 @@ const Contact = () => {
             setDone(true);
           },
           (error) => {
-            console.log(error.text);
+            console.log(error.text + "hei");
           }
         );
     }
