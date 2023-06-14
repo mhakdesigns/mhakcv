@@ -18,8 +18,10 @@ const Footer = () => {
           <span>Dedicated to creating impactful solutions!</span>
         </Col>
         <Col md="4" className="footer-copywright">
-          <span>Copyright © {year}</span>
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <span>Copyright © {year} </span>
+          <a href="https://hishamak2004@gmail.com">
+            <span href=""> Hisham Ak</span> 
+          </a>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

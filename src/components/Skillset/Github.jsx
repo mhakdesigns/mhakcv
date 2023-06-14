@@ -16,7 +16,7 @@ const Github = () => {
         fontSize={16}
       />
     </Row>
-  );
+  );<Github />
 };
 
 export default Github;
