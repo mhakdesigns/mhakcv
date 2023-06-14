@@ -7,7 +7,6 @@ import {
   DiGit,
 } from "react-icons/di";
 import {
-  SiMaterialui,
   SiGraphql,
   SiSolidity,
   SiRedux,
@@ -43,7 +42,7 @@ const Techstack = () => {
         <SiSolidity />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+       
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
